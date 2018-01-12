@@ -1,11 +1,6 @@
 var integers = [];
 var i = 0;
 
-var newDiv = document.createElement("div");
-newDiv.className = "newDiv";
-var newContent = document.createTextNode("Integers will appear here soon");
-newDiv.appendChild(newContent);
-document.body.appendChild(newDiv);
 
 var newButton = document.createElement("button");
 newButton.id = 'alertIntegers';
@@ -25,3 +20,11 @@ document.getElementById('addInteger').addEventListener('click',function(){
   integers.push(i);
   i = i + 1;
 });
+
+try{
+  var p = new MyPoint(1,2);
+  alert('Created MyPoint: ' + p.toString());
+}
+catch(err){
+  alert('failed to create MyPoint' + '\n' + err.toString());
+}
