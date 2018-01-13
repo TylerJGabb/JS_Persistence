@@ -9,4 +9,4 @@ app.get('/',function(req,res) {
 app.use('/',express.static(path.join(__dirname,'public')));
 
 app.listen(8080);
-console.log('SERVER STARTED');
+console.log('SERVER STARTED ON PORT 8080');
